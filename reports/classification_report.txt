@@ -1,0 +1,90 @@
+=== LogisticRegression ===
+Best Params: {'classifier__C': 0.01, 'classifier__penalty': 'l1', 'classifier__solver': 'liblinear'}
+AUC: 0.5000
+              precision    recall  f1-score   support
+
+           0       0.53      1.00      0.69       105
+           1       0.00      0.00      0.00        95
+
+    accuracy                           0.53       200
+   macro avg       0.26      0.50      0.34       200
+weighted avg       0.28      0.53      0.36       200
+
+[[105   0]
+ [ 95   0]]
+
+=== KNN ===
+Best Params: {'classifier__n_neighbors': 3, 'classifier__weights': 'distance'}
+AUC: 0.4621
+              precision    recall  f1-score   support
+
+           0       0.53      0.48      0.50       105
+           1       0.48      0.54      0.51        95
+
+    accuracy                           0.51       200
+   macro avg       0.51      0.51      0.50       200
+weighted avg       0.51      0.51      0.50       200
+
+[[50 55]
+ [44 51]]
+
+=== RandomForest ===
+Best Params: {'classifier__max_depth': None, 'classifier__n_estimators': 100}
+AUC: 0.4411
+              precision    recall  f1-score   support
+
+           0       0.50      0.51      0.50       105
+           1       0.44      0.42      0.43        95
+
+    accuracy                           0.47       200
+   macro avg       0.47      0.47      0.47       200
+weighted avg       0.47      0.47      0.47       200
+
+[[54 51]
+ [55 40]]
+
+=== DecisionTree ===
+Best Params: {'classifier__max_depth': None}
+AUC: 0.4618
+              precision    recall  f1-score   support
+
+           0       0.49      0.48      0.48       105
+           1       0.44      0.45      0.45        95
+
+    accuracy                           0.47       200
+   macro avg       0.46      0.46      0.46       200
+weighted avg       0.47      0.47      0.47       200
+
+[[50 55]
+ [52 43]]
+
+=== XGBoost ===
+Best Params: {'classifier__learning_rate': 0.1, 'classifier__max_depth': 5, 'classifier__n_estimators': 100}
+AUC: 0.4784
+              precision    recall  f1-score   support
+
+           0       0.53      0.57      0.55       105
+           1       0.48      0.44      0.46        95
+
+    accuracy                           0.51       200
+   macro avg       0.51      0.51      0.51       200
+weighted avg       0.51      0.51      0.51       200
+
+[[60 45]
+ [53 42]]
+
+=== LGBM ===
+Best Params: {'classifier__learning_rate': 0.1, 'classifier__max_depth': -1, 'classifier__n_estimators': 100}
+AUC: 0.4581
+              precision    recall  f1-score   support
+
+           0       0.52      0.53      0.53       105
+           1       0.47      0.46      0.47        95
+
+    accuracy                           0.50       200
+   macro avg       0.50      0.50      0.50       200
+weighted avg       0.50      0.50      0.50       200
+
+[[56 49]
+ [51 44]]
+
